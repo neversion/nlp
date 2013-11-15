@@ -3,19 +3,29 @@
 require 'rmmseg'
 
 
-def process
-	count = 4
-	RMMSeg::Dictionary.load_dictionaries
+def import_origin
+	count=1
 	path = "#{Rails.root}/public/data/contents.txt"
-	File.open("contents.txt") do |file|
+	File.open(path) do |file|
+			RMMSeg::Dictionary.load_dictionaries
+
 		file.each_line do |line|
-			puts seg line
+			parts = line.split(',')
+
+			stock = Stock.new
+			stock.stock_id = parts[0].gsub(/\"/,'')
+			stock.name = parts[1].gsub(/\"/,'')
+			stock.title = parts[2].gsub(/\"/,'')
+			stock.author = parts[3].gsub(/\"/,'')
+			stock.code = parts[4].gsub(/\"/,'')
+			stock.resource = parts[5].gsub(/\"/,'')
+			stock.date = parts[6].gsub(/\"/,'').gsub("\r\n",'')
+			stock.seg_words = seg stock.title
+			# binding.pry
+			stock.save
+			puts "#{count}: #{stock.title}" 
+			count = count+1
 		end
-		# file.each_line do |line|
-		# 	break unless count>0
-		# 	# puts seg text
-		# 	count--
-		# end
 	end
 end	  
 
@@ -25,12 +35,13 @@ def seg text
 	loop do
 		tok = algor.next_token
 		break if tok.nil?
-		results +="#{tok.text} " 
+		results +="#{tok.text}^" 
 		# puts "#{tok.text} [#{tok.start}..#{tok.end}]"
 	end
-	return results
+	return results.force_encoding("utf-8")
 end
 
+		# attr_accessible :stock_id, :name ,:title, :author, :code, :resource ,:time
 
 
-process
+import_origin

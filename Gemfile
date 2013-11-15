@@ -50,5 +50,7 @@ gem 'binding_of_caller'
 gem 'pry'
 gem 'pry-nav'
 
+gem 'protected_attributes'
+
 #分词
 gem 'rmmseg-cpp'

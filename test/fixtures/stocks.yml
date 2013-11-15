@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: MyString
+  stock_id: MyString
   name: MyString
   title: MyString
   author: MyString
   code: MyString
   resource: MyString
-  time: MyString
+  date: MyString
 
 two:
-  id: MyString
+  stock_id: MyString
   name: MyString
   title: MyString
   author: MyString
   code: MyString
   resource: MyString
-  time: MyString
+  date: MyString

@@ -1,13 +1,14 @@
-class CreateOrigins < ActiveRecord::Migration
+class CreateStocks < ActiveRecord::Migration
   def change
-    create_table :origins do |t|
-      t.string :id
+    create_table :stocks do |t|
+      t.string :stock_id
       t.string :name
       t.string :title
       t.string :author
       t.string :code
       t.string :resource
-      t.string :time
+      t.string :date
+      t.string :seg_words
 
       t.timestamps
     end

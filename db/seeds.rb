@@ -42,6 +42,32 @@ def seg text
 end
 
 		# attr_accessible :stock_id, :name ,:title, :author, :code, :resource ,:time
+def count
+	hash = Hash.new
+	Stock.all.each do |s|
+		s.seg_words.split('^').each do |item|
+			if !item.nil? && item.length!=0
+				if !hash[item].nil?	
+					hash[item]=hash[item]+1
+				else
+					hash[item]=1
+				end
+				puts "#{item}: #{hash[item]}"
+			end
+		end
+	end
+	puts "#{hash.count}done"
+	path = "#{Rails.root}/public/data/freq_sorted.txt"
+	binding.pry
+	array =  hash.sort_by{|key,val| val}
+	file = File.new(path,"w")
+		array.each do |item|
+			file.puts "#{item[0]}:#{item[1]}\r\n"
+		end
+		file.close
+	puts "done"
+end
 
 
-import_origin
+# import_origin
+count

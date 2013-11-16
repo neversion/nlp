@@ -1,4 +1,5 @@
 Nlp::Application.routes.draw do
+  root "stocks#index"
   resources :stocks
 
   # The priority is based upon order of creation: first created -> highest priority.

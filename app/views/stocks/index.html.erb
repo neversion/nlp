@@ -10,6 +10,7 @@
       <th>Code</th>
       <th>Resource</th>
       <th>Date</th>
+      <th>SegWords</th>
       <th></th>
       <th></th>
       <th></th>
@@ -26,6 +27,7 @@
         <td><%= stock.code %></td>
         <td><%= stock.resource %></td>
         <td><%= stock.date %></td>
+        <td><%= stock.seg_words %></td>
         <td><%= link_to 'Show', stock %></td>
         <td><%= link_to 'Edit', edit_stock_path(stock) %></td>
         <td><%= link_to 'Destroy', stock, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -37,3 +39,5 @@
 <br>
 
 <%= link_to 'New Stock', new_stock_path %>
+<%= will_paginate @stocks %>
+

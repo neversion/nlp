@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131115124724) do
+ActiveRecord::Schema.define(version: 20131120041348) do
 
   create_table "stocks", force: true do |t|
+    t.string   "file_index"
     t.string   "stock_id"
     t.string   "name"
     t.string   "title"
@@ -25,5 +26,7 @@ ActiveRecord::Schema.define(version: 20131115124724) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "stocks", ["file_index"], name: "index_stocks_on_file_index"
 
 end

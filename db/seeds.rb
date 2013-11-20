@@ -1,18 +1,18 @@
 # -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
-require 'rmmseg'
 
 
 def import_origin
-	count=1
+	#count=1
 	path = "#{Rails.root}/public/data/contents.txt"
 	File.open(path) do |file|
-			RMMSeg::Dictionary.load_dictionaries
-
+			#RMMSeg::Dictionary.load_dictionaries
+    file_index=1
 		file.each_line do |line|
 			parts = line.split(',')
 
 			stock = Stock.new
+      stock.file_index=file_index
 			stock.stock_id = parts[0].gsub(/\"/,'')
 			stock.name = parts[1].gsub(/\"/,'')
 			stock.title = parts[2].gsub(/\"/,'')
@@ -20,14 +20,24 @@ def import_origin
 			stock.code = parts[4].gsub(/\"/,'')
 			stock.resource = parts[5].gsub(/\"/,'')
 			stock.date = parts[6].gsub(/\"/,'').gsub("\r\n",'')
-			stock.seg_words = seg stock.title
+			#stock.seg_words = seg stock.title
 			# binding.pry
 			stock.save
-			puts "#{count}: #{stock.title}" 
-			count = count+1
+      file_index = file_index+1
+			puts "#{file_index}: #{stock.title}"
+			#count = count+1
 		end
 	end
 end	  
+
+def import_seg
+  path = "#{Rails.root}/public/data/title_pos.txt"
+  File.open(path) do |file|
+    file.each_line do |line|
+
+    end
+  end
+end
 
 def seg text
 	results = ""
@@ -69,5 +79,5 @@ def count
 end
 
 
-# import_origin
-count
+import_origin
+#count

@@ -1,6 +1,7 @@
 class CreateStocks < ActiveRecord::Migration
   def change
     create_table :stocks do |t|
+      t.string :file_index
       t.string :stock_id
       t.string :name
       t.string :title

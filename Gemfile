@@ -53,7 +53,9 @@ gem 'pry-nav'
 gem 'protected_attributes'
 
 #分词
-gem 'rmmseg-cpp'
+#gem 'rmmseg-cpp'
 
 #分页
 gem 'will_paginate', '~> 3.0.5'
+
+#gem 'nlpir'

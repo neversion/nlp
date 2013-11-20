@@ -32,9 +32,13 @@ end
 
 def import_seg
   path = "#{Rails.root}/public/data/title_pos.txt"
+  line_index=1
   File.open(path) do |file|
     file.each_line do |line|
-
+      s = Stock.find_by_file_index(line_index)
+      s.seg_words=line
+      s.save
+      line_index = line_index+1
     end
   end
 end
@@ -55,7 +59,7 @@ end
 def count
 	hash = Hash.new
 	Stock.all.each do |s|
-		s.seg_words.split('^').each do |item|
+		s.seg_words.split(' ').each do |item|
 			if !item.nil? && item.length!=0
 				if !hash[item].nil?	
 					hash[item]=hash[item]+1
@@ -79,5 +83,6 @@ def count
 end
 
 
-import_origin
+#import_origin
+import_seg
 #count

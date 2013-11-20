@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131115124724_create_stocks.rb" afterPath="$PROJECT_DIR$/db/migrate/20131115124724_create_stocks.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stock.rb" afterPath="$PROJECT_DIR$/app/models/stock.rb" />
     </list>
     <ignored path="nlp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +10,7 @@
     <file path="/Dummy.txt" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384920582408" ignored="false" />
     <file path="/stock.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384911149492" ignored="false" />
     <file path="/20131115124724_create_stocks.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384911175476" ignored="false" />
-    <file path="/seeds.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384920662327" ignored="false" />
+    <file path="/seeds.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384921042631" ignored="false" />
     <file path="/20131120041348_add_file_index_to_stocks.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384920846783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +52,8 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="35" selection-start="787" selection-end="787" vertical-scroll-proportion="0.33179724">
-              <folding>
-                <element signature="e#1269#1790#0" expanded="false" />
-              </folding>
+            <state line="68" column="42" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.48156682">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,8 +97,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/stock.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131115124724_create_stocks.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131120041348_add_file_index_to_stocks.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -632,9 +625,7 @@
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="24" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1269#1790#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,10 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="787" selection-end="787" vertical-scroll-proportion="0.33179724">
-          <folding>
-            <element signature="e#1269#1790#0" expanded="false" />
-          </folding>
+        <state line="68" column="42" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.48156682">
+          <folding />
         </state>
       </provider>
     </entry>

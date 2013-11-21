@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nlp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384910872012" ignored="false" />
-    <file path="/Dummy.txt" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384920582408" ignored="false" />
+    <file path="/Dummy.txt" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384997583688" ignored="false" />
     <file path="/stock.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384911149492" ignored="false" />
     <file path="/20131115124724_create_stocks.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384911175476" ignored="false" />
-    <file path="/seeds.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384921042631" ignored="false" />
+    <file path="/seeds.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384996292696" ignored="false" />
     <file path="/20131120041348_add_file_index_to_stocks.rb" changelist="b854f7cb-928a-4f9b-8448-fa1ffd3a787c" time="1384920846783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="42" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.48156682">
+            <state line="89" column="29" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="freq_sorted.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/data/freq_sorted.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69245" column="70" selection-start="629410" selection-end="629410" vertical-scroll-proportion="0.021251475">
               <folding />
             </state>
           </provider>
@@ -134,6 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,12 +262,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xmu_hydra" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -531,7 +542,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2596154" sideWeight="0.67002237" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26442307" sideWeight="0.67002237" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -608,6 +619,41 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="29" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131115124724_create_stocks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/data/freq_sorted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69245" column="70" selection-start="629410" selection-end="629410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/stock.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="14" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="36" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
@@ -659,9 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131120041348_add_file_index_to_stocks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="63" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10625738">
-          <folding />
-        </state>
+        <state line="5" column="63" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10625738" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131115124724_create_stocks.rb">
@@ -673,7 +717,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="42" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.48156682">
+        <state line="89" column="29" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/data/freq_sorted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69245" column="70" selection-start="629410" selection-end="629410" vertical-scroll-proportion="0.021251475">
           <folding />
         </state>
       </provider>

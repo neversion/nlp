@@ -108,17 +108,18 @@ def rand_index(count)
 end
 
 def rand_lines(count,part_count)
-  binding.pry
   index_list=rand_index(count)
   per_count = count/part_count
-  path = "#{Rails.root}/public/data/rand_lines.txt"
-  file = File.new(path, "w")
-  index_list.each do |item|
-    seg_words = Stock.find_by_file_index(item).seg_words
-    file.puts seg_words
-    puts seg_words 
+  (1..part_count).each do |index|
+    path = "#{Rails.root}/public/data/rand_lines#{index}.txt"
+    file = File.new(path, "w")
+    index_list[0+per_count*(index-1)..per_count*index-1].each do |item|
+      seg_words = Stock.find_by_file_index(item).seg_words
+      file.puts seg_words
+      puts seg_words 
+    end
+    file.close
   end
-  file.close
   puts "done"
 end
 
@@ -126,4 +127,4 @@ end
 #import_origin
 #import_seg
 # count
-rand_lines(5000)
+rand_lines(5000,5)

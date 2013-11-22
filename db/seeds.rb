@@ -107,16 +107,16 @@ def rand_index(count)
   return index_list
 end
 
-def rand_lines(count)
+def rand_lines(count,part_count)
   binding.pry
   index_list=rand_index(count)
-
+  per_count = count/part_count
   path = "#{Rails.root}/public/data/rand_lines.txt"
   file = File.new(path, "w")
   index_list.each do |item|
-    title = Stock.find_by_file_index(item).title
-    file.puts title
-    puts title 
+    seg_words = Stock.find_by_file_index(item).seg_words
+    file.puts seg_words
+    puts seg_words 
   end
   file.close
   puts "done"
